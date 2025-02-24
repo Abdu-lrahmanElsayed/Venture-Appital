@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Weather App</title>
+    </head> 
+    <body>
+        <div id="greet">
+            <h1>Welcome to The Weather App!</h1>
+        </div>
+
+        <div id="Location">
+            <label>Select Country:</lable>
+            <select name="country" id="country" autofocus required onchange="getSelectedCountry()">
+                <option value="">None</option>
+            </select>
+
+            <label>Select City:</lable>
+            <select name="city" id="city" required disabled>
+                <option value="">None</option>
+            </select>
+            <button onclick="getSelectedCity()">Show Weather</button>
+            Or
+            <button onclick="getLocation()">Get My Location</button>
+            <p id="Auto"></p>
+        </div>
+
+        <div id="Weather"></div>
+
+        <script src="app.js"></script>
+    </body>
+</html>
